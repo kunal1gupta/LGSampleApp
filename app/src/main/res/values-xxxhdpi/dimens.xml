@@ -1,0 +1,5 @@
+<resources>
+
+    <dimen name="chlist_divider">1dip</dimen>
+    <integer name="chlist_weight_port">11</integer>
+</resources>

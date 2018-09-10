@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="@integer/chlist_weight_port"
+            android:orientation="vertical" >
+
+            <ViewStub
+                android:id="@+id/tv_screen"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="@integer/chlist_weight_port"
+                android:layout="@layout/tv_screen" />
+
+            <ViewStub
+                android:id="@+id/bottom_buttons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout="@layout/bottom_buttons" />
+
+            <ViewStub
+                android:id="@+id/ch_list_port"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="bottom"
+                android:layout_weight="@integer/chlist_weight_port"
+                android:layout="@layout/ch_list_port" />
+        </LinearLayout>
+
+       
+    </LinearLayout>
+
+</RelativeLayout>
